@@ -6,5 +6,6 @@ public class DisciplinaModel {
     private String nomeDoProfessor;
     private int cargaHoraria;
 
+    public DisciplinaModel(String nome, String nomeDoProfessor, int cargaHoraria)
 
 }

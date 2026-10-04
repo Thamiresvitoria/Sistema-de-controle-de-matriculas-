@@ -35,7 +35,7 @@ public class MatriculaModel {
         this.id = id;
     }
 
-    public Aluno getAluno() {
+    public AlunoModel getAluno() {
         return aluno;
     }
 
@@ -43,7 +43,7 @@ public class MatriculaModel {
         this.aluno = aluno;
     }
 
-    public Turma getTurma() {
+    public TurmaModel getTurma() {
         return turma;
     }
 
@@ -51,7 +51,7 @@ public class MatriculaModel {
         this.turma = turma;
     }
 
-    public Disciplina getDisciplina() {
+    public DisciplinaModel getDisciplina() {
         return disciplina;
     }
 
@@ -63,11 +63,11 @@ public class MatriculaModel {
 
     @Override
     public String toString() {
-        return "Matricula" +
+        return "Matricula" + "\n" +
                 "id:" + id + "\n" +
-                ", aluno:" + aluno + "\n" +
-                ", turma:" + turma + "\n" +
-                ", disciplina:" + disciplina
+                "Aluno:" + aluno + "\n" +
+                "Turma:" + turma + "\n" +
+                "isciplina:" + disciplina
                 ;
     }
 }

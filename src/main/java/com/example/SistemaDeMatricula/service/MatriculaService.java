@@ -1,4 +1,4 @@
 package com.example.SistemaDeMatricula.service;
 
-public class AlunoService {
+public class MatriculaService {
 }

@@ -12,8 +12,9 @@ public interface AlunoRepository {
 
     AlunoModel buscarPorId(Long id);
 
+    AlunoModel buscarPorEmail(String email);
+
     void atualizar(AlunoModel aluno);
 
     void excluir(Long id);
-
 }

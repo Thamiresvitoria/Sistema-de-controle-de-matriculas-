@@ -94,6 +94,7 @@ Principais entidades:
 * `Aluno`
 * `Turma`
 * `Matricula`
+* 'Disciplina'
 
 Os Models possuem os atributos e comportamentos relacionados aos objetos do domínio.
 
@@ -110,6 +111,7 @@ Principais Controllers:
 * `AlunoController`
 * `TurmaController`
 * `MatriculaController`
+* 'DisciplinaController'
 
 ---
 
@@ -124,6 +126,7 @@ Principais Services:
 * `AlunoService`
 * `TurmaService`
 * `MatriculaService`
+* 'DisciplinaService'
 
 ---
 
@@ -138,6 +141,7 @@ Principais Repositories:
 * `AlunoRepository`
 * `TurmaRepository`
 * `MatriculaRepository`
+* 'DisciplinaRepository'
 
 ---
 
@@ -179,21 +183,25 @@ src/
                     │
                     ├── controller/
                     │   ├── AlunoController.java
+                    │   ├── DisciplinaController.java
                     │   ├── TurmaController.java
                     │   └── MatriculaController.java
                     │
                     ├── model/
-                    │   ├── Aluno.java
-                    │   ├── Turma.java
-                    │   └── Matricula.java
+                    │   ├── AlunoModel.java
+                    │   ├── DisciplinaModel.java
+                    │   ├── TurmaModel.java
+                    │   └── MatriculaModel.java
                     │
                     ├── repository/
                     │   ├── AlunoRepository.java
+                    │   ├── DisciplinaRepository.java
                     │   ├── TurmaRepository.java
                     │   └── MatriculaRepository.java
                     │
                     └── service/
                         ├── AlunoService.java
+                        ├── DisciplinaService.java
                         ├── TurmaService.java
                         └── MatriculaService.java
 
@@ -202,10 +210,7 @@ src/
         └── com/
             └── exemplo/
                 └── Sistema de matricula/
-                    └── teste/
-                        ├── AlunoServiceTest.java
-                        ├── TurmaServiceTest.java
-                        └── MatriculaServiceTest.java
+                    └── teste
 
 pom.xml
 README.md

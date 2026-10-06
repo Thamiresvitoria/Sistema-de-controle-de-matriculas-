@@ -83,6 +83,6 @@ public class DisciplinaModel {
                 "Nome.........:"  + nome + "\n" +
                 "Código.......:"  + codigo + "\n" +
                 "Carga Horária:"  + cargaHoraria + "\n" +
-                "Status........:" + status;
+                "Status........:" + (status ? "Ativo" : "Desativada");
     }
 }

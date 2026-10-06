@@ -75,12 +75,12 @@ public class MatriculaModel {
     @Override
     public String toString() {
         return "Matricula" + "\n" +
-                "id:" + id + "\n" +
-                "Aluno:" + aluno + "\n" +
-                "Turma:" + turma + "\n" +
-                "Disciplina:" + disciplina + "\n" +
-                "Status"   + status + "\n" +
-                "Data matricula" + dataMatricula
+                "id...........:" + id + "\n" +
+                "Aluno........:" + aluno + "\n" +
+                "Turma........:" + turma + "\n" +
+                "Disciplina...:" + disciplina + "\n" +
+                "Status.......:"   + status + "\n" +
+                "Data matricula:" + dataMatricula
                 ;
     }
 }

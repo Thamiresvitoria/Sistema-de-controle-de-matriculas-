@@ -34,6 +34,17 @@ public class DisciplinaRepositoryMemoria implements DisciplinaRepository {
     }
 
     @Override
+    public DisciplinaModel buscarPorCodigo(String codigo) {
+        for (DisciplinaModel disciplina : disciplinas) {
+            if (disciplina.getCodigo() != null
+                    && disciplina.getCodigo().equalsIgnoreCase(codigo)) {
+                return disciplina;
+            }
+        }
+        return null;
+    }
+
+    @Override
     public void atualizar(DisciplinaModel disciplina) {
         for (int i = 0; i < disciplinas.size(); i++) {
             if (disciplinas.get(i).getId().equals(disciplina.getId())) {

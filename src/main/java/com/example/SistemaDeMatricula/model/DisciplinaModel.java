@@ -15,6 +15,7 @@ public class DisciplinaModel {
         this.nome = nome;
         this.codigo = codigo;
         this.cargaHoraria = cargaHoraria;
+        this.status = true;
     }
 
     public Long getId() {

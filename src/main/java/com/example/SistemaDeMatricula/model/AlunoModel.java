@@ -15,7 +15,7 @@ public class AlunoModel {
         this.id = proximoId++;
         this.cpf = cpf;
         this.email = email;
-        this.status = true;
+        this.status = false;
     }
 
     public Long getId() {

@@ -8,12 +8,14 @@ public class DisciplinaModel {
     private String nome;
     private String codigo;
     private Integer cargaHoraria;
+    private boolean status;
 
     public DisciplinaModel(String nome, String codigo, int cargaHoraria){
         this.id = proximoId++;
         this.nome = nome;
         this.codigo = codigo;
         this.cargaHoraria = cargaHoraria;
+        this.status = true;
     }
 
     public Long getId() {
@@ -60,6 +62,7 @@ public class DisciplinaModel {
                 "id...........:"  + id + "\n" +
                 "Nome.........:"  + nome + "\n" +
                 "Código.......:"  + codigo + "\n" +
-                "Carga Horária:"  + cargaHoraria;
+                "Carga Horária:"  + cargaHoraria + "\n" +
+                "Status........:" + status;
     }
 }

@@ -2,44 +2,59 @@ package com.example.SistemaDeMatricula.repository;
 
 import com.example.SistemaDeMatricula.model.AlunoModel;
 import org.springframework.stereotype.Repository;
+
 import java.util.ArrayList;
 import java.util.List;
 
-
 @Repository
-public class AlunoRepositoryMemoria implements AlunoRepository{
+public class AlunoRepositoryMemoria implements AlunoRepository {
 
     private final List<AlunoModel> alunos = new ArrayList<>();
+    private Long proximoId = 1L;
 
     @Override
     public void salvar(AlunoModel aluno) {
+        aluno.setId(proximoId++);
         alunos.add(aluno);
     }
 
     @Override
     public List<AlunoModel> listar() {
-        return alunos;
+        return new ArrayList<>(alunos);
     }
 
     @Override
     public AlunoModel buscarPorId(Long id) {
-        for (AlunoModel aluno : alunos){
+        for (AlunoModel aluno : alunos) {
             if (aluno.getId().equals(id)) {
-                continue;
+                return aluno;
             }
-            return aluno;
         }
+        return null;
+    }
 
+    @Override
+    public AlunoModel buscarPorEmail(String email) {
+        for (AlunoModel aluno : alunos) {
+            if (aluno.getEmail() != null && aluno.getEmail().equalsIgnoreCase(email)) {
+                return aluno;
+            }
+        }
         return null;
     }
 
     @Override
     public void atualizar(AlunoModel aluno) {
-
+        for (int i = 0; i < alunos.size(); i++) {
+            if (alunos.get(i).getId().equals(aluno.getId())) {
+                alunos.set(i, aluno);
+                return;
+            }
+        }
     }
 
     @Override
     public void excluir(Long id) {
-        return;
+        alunos.removeIf(aluno -> aluno.getId().equals(id));
     }
 }

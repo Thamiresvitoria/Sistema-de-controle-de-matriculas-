@@ -7,10 +7,10 @@ public class DisciplinaModel {
     private Long id;
     private String nome;
     private String codigo;
-    private int cargaHoraria;
+    private Integer cargaHoraria;
     private boolean status;
 
-    public DisciplinaModel(String nome, String codigo, int cargaHoraria){
+    public DisciplinaModel(String nome, String codigo, int cargaHoraria) {
         this.id = proximoId++;
         this.nome = nome;
         this.codigo = codigo;
@@ -19,12 +19,10 @@ public class DisciplinaModel {
     }
 
     public Long getId() {
-
         return id;
     }
 
     public void setId(Long id) {
-
         this.id = id;
     }
 
@@ -37,22 +35,18 @@ public class DisciplinaModel {
     }
 
     public String getCodigo() {
-
         return codigo;
     }
 
     public void setCodigo(String codigo) {
-
         this.codigo = codigo;
     }
 
     public int getCargaHoraria() {
-
         return cargaHoraria;
     }
 
     public void setCargaHoraria(int cargaHoraria) {
-
         this.cargaHoraria = cargaHoraria;
     }
 
@@ -64,25 +58,14 @@ public class DisciplinaModel {
         this.status = status;
     }
 
-    public void setCargaHoraria(Integer cargaHoraria) {
-        this.cargaHoraria = cargaHoraria;
-    }
-
-    public static Long getProximoId() {
-        return proximoId;
-    }
-
-    public static void setProximoId(Long proximoId) {
-        DisciplinaModel.proximoId = proximoId;
-    }
-
     @Override
     public String toString() {
-        return "Disciplina" + "\n" +
-                "id...........:"  + id + "\n" +
-                "Nome.........:"  + nome + "\n" +
-                "Código.......:"  + codigo + "\n" +
-                "Carga Horária:"  + cargaHoraria + "\n" +
-                "Status........:" + (status ? "Ativo" : "Desativada");
+        return "DisciplinaModel{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", codigo='" + codigo + '\'' +
+                ", cargaHoraria=" + cargaHoraria +
+                ", status=" + status +
+                '}';
     }
 }

@@ -10,7 +10,7 @@ public interface DisciplinaRepository {
 
     List<DisciplinaModel> listar();
 
-    Disciplina buscarPorId(Long id);
+    DisciplinaModel buscarPorId(Long id);
 
     void atualizar(DisciplinaModel disciplina);
 

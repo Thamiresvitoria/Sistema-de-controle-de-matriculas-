@@ -94,7 +94,7 @@ Principais entidades:
 * `Aluno`
 * `Turma`
 * `Matricula`
-* 'Disciplina'
+* `Disciplina`
 
 Os Models possuem os atributos e comportamentos relacionados aos objetos do domínio.
 
@@ -111,7 +111,7 @@ Principais Controllers:
 * `AlunoController`
 * `TurmaController`
 * `MatriculaController`
-* 'DisciplinaController'
+* `DisciplinaController`
 
 ---
 
@@ -126,7 +126,7 @@ Principais Services:
 * `AlunoService`
 * `TurmaService`
 * `MatriculaService`
-* 'DisciplinaService'
+* `DisciplinaService`
 
 ---
 
@@ -141,7 +141,7 @@ Principais Repositories:
 * `AlunoRepository`
 * `TurmaRepository`
 * `MatriculaRepository`
-* 'DisciplinaRepository'
+* `DisciplinaRepository`
 
 ---
 

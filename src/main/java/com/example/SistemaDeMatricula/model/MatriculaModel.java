@@ -15,14 +15,12 @@ public class MatriculaModel {
     private boolean status;
 
 
-
     public MatriculaModel(Long id, AlunoModel aluno, TurmaModel turma, DisciplinaModel disciplina) {
         this.id = proximoId++;
         this.aluno = aluno;
         this.turma = turma;
         this.disciplina = disciplina;
-        this.dataMatricula = dataMatricula;
-        this.status = true;
+        boolean status = true;
     }
 
 
@@ -66,6 +64,13 @@ public class MatriculaModel {
         this.disciplina = disciplina;
     }
 
+    public LocalDate getDataMatricula() {
+        return dataMatricula;
+    }
+
+    public void setDataMatricula(LocalDate dataMatricula) {
+        this.dataMatricula = dataMatricula;
+    }
 
     @Override
     public String toString() {
@@ -73,7 +78,9 @@ public class MatriculaModel {
                 "id:" + id + "\n" +
                 "Aluno:" + aluno + "\n" +
                 "Turma:" + turma + "\n" +
-                "Disciplina:" + disciplina
+                "Disciplina:" + disciplina + "\n" +
+                "Status"   + status + "\n" +
+                "Data matricula" + dataMatricula
                 ;
     }
 }

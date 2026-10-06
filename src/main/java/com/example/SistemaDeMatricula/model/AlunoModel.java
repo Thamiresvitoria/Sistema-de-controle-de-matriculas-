@@ -3,12 +3,12 @@ package com.example.SistemaDeMatricula.model;
 public class AlunoModel {
 
     private Long id;
-    private String cpf;
     private String nome;
     private String email;
+    private String cpf;
     private boolean status;
 
-    public AlunoModel(Long id, String nome, String cpf, String email){
+    public AlunoModel(String nome, String cpf, String email){
         this.id = 1L;
         this.cpf = cpf;
         this.email = email;
@@ -53,5 +53,14 @@ public class AlunoModel {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+
+    public String toString() {
+        return "Aluno" + "\n" +
+                "id...:"  + id + "\n" +
+                "Nome.:"  + nome + "\n" +
+                "Email:"  + email + "\n" +
+                "Cpf..:"  + cpf + "\n" +
+                "Status:" + status + "\n";
     }
 }

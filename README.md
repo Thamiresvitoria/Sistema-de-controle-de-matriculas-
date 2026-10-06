@@ -173,7 +173,7 @@ src/
     └── java/
         └── com/
             └── exemplo/
-                └── projeto/
+                └── Sistema de matricula/
                     │
                     ├── Main.java
                     │
@@ -201,8 +201,8 @@ src/
     └── java/
         └── com/
             └── exemplo/
-                └── projeto/
-                    └── service/
+                └── Sistema de matricula/
+                    └── teste/
                         ├── AlunoServiceTest.java
                         ├── TurmaServiceTest.java
                         └── MatriculaServiceTest.java

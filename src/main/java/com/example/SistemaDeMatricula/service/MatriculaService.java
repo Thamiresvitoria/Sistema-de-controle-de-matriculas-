@@ -35,7 +35,6 @@ public class MatriculaService {
     public void salvar(MatriculaModel matricula) {
 
         // 1. Verificar se o aluno existe
-        // 1. Verificar se o aluno existe
         AlunoModel aluno = alunoRepository.buscarPorId(
                 matricula.getAluno().getId()
         );
@@ -43,6 +42,7 @@ public class MatriculaService {
         if (aluno == null) {
             throw new RuntimeException("Aluno não encontrado.");
         }
+
         // 2. Verificar se a disciplina existe
         DisciplinaModel disciplina = disciplinaRepository.buscarPorId(
                 matricula.getDisciplina().getId()

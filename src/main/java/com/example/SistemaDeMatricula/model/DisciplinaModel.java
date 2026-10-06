@@ -7,7 +7,7 @@ public class DisciplinaModel {
     private Long id;
     private String nome;
     private String codigo;
-    private Integer cargaHoraria;
+    private int cargaHoraria;
     private boolean status;
 
     public DisciplinaModel(String nome, String codigo, int cargaHoraria){
@@ -54,6 +54,26 @@ public class DisciplinaModel {
     public void setCargaHoraria(int cargaHoraria) {
 
         this.cargaHoraria = cargaHoraria;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    public void setCargaHoraria(Integer cargaHoraria) {
+        this.cargaHoraria = cargaHoraria;
+    }
+
+    public static Long getProximoId() {
+        return proximoId;
+    }
+
+    public static void setProximoId(Long proximoId) {
+        DisciplinaModel.proximoId = proximoId;
     }
 
     @Override

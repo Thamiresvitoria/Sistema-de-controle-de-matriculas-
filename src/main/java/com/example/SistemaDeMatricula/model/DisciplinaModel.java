@@ -1,23 +1,28 @@
 package com.example.SistemaDeMatricula.model;
 
 public class DisciplinaModel {
+
+    private static Long proximoId = 1L;
+
     private Long id;
     private String nome;
     private String codigo;
-    private int cargaHoraria;
+    private Integer cargaHoraria;
 
     public DisciplinaModel(String nome, String codigo, int cargaHoraria){
-        this.id = 1L;
+        this.id = proximoId++;
         this.nome = nome;
         this.codigo = codigo;
         this.cargaHoraria = cargaHoraria;
     }
 
     public Long getId() {
+
         return id;
     }
 
     public void setId(Long id) {
+
         this.id = id;
     }
 
@@ -30,21 +35,26 @@ public class DisciplinaModel {
     }
 
     public String getCodigo() {
+
         return codigo;
     }
 
     public void setCodigo(String codigo) {
+
         this.codigo = codigo;
     }
 
     public int getCargaHoraria() {
+
         return cargaHoraria;
     }
 
     public void setCargaHoraria(int cargaHoraria) {
+
         this.cargaHoraria = cargaHoraria;
     }
 
+    @Override
     public String toString() {
         return "Disciplina" + "\n" +
                 "id...........:"  + id + "\n" +

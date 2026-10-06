@@ -1,65 +1,71 @@
 package com.example.SistemaDeMatricula.model;
 
 
+import java.time.LocalDate;
+
 public class MatriculaModel {
+
+    private static Long proximoId = 1L;
 
     private Long id;
     private AlunoModel aluno;
     private TurmaModel turma;
     private DisciplinaModel disciplina;
+    private LocalDate dataMatricula;
+    private boolean status;
 
-    // Construtor vazio
-    public MatriculaModel() {
-    }
 
-    // Construtor completo
-    public MatriculaModel(
-            Long id,
-            AlunoModel aluno,
-            TurmaModel turma,
-            DisciplinaModel disciplina
-    ) {
-        this.id = id;
+
+    public MatriculaModel(Long id, AlunoModel aluno, TurmaModel turma, DisciplinaModel disciplina) {
+        this.id = proximoId++;
         this.aluno = aluno;
         this.turma = turma;
         this.disciplina = disciplina;
+        this.dataMatricula = dataMatricula;
+        this.status = true;
     }
 
-    // Getters e Setters
 
     public Long getId() {
+
         return id;
     }
 
     public void setId(Long id) {
+
         this.id = id;
     }
 
     public AlunoModel getAluno() {
+
         return aluno;
     }
 
     public void setAluno(AlunoModel aluno) {
+
         this.aluno = aluno;
     }
 
     public TurmaModel getTurma() {
+
         return turma;
     }
 
     public void setTurma(TurmaModel turma) {
+
         this.turma = turma;
     }
 
     public DisciplinaModel getDisciplina() {
+
         return disciplina;
     }
 
     public void setDisciplina(DisciplinaModel disciplina) {
+
         this.disciplina = disciplina;
     }
 
-    // toString
 
     @Override
     public String toString() {
@@ -67,7 +73,7 @@ public class MatriculaModel {
                 "id:" + id + "\n" +
                 "Aluno:" + aluno + "\n" +
                 "Turma:" + turma + "\n" +
-                "isciplina:" + disciplina
+                "Disciplina:" + disciplina
                 ;
     }
 }

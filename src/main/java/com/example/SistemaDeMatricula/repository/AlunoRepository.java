@@ -1,16 +1,14 @@
 package com.example.SistemaDeMatricula.repository;
-
 import com.example.SistemaDeMatricula.model.AlunoModel;
-
 import java.util.List;
 
 public interface AlunoRepository {
 
-    void salvar(AlunoModel aluno);
+    AlunoModel salvar(AlunoModel aluno);
 
-    List<AlunoModel> listar();
+    Optional<AlunoModel> buscarPorId(Long id);
 
-    AlunoModel buscarPorId(Long id);
+    Optional<AlunoModel> buscarPorCpf(String cpf);
 
     AlunoModel buscarPorEmail(String email);
 

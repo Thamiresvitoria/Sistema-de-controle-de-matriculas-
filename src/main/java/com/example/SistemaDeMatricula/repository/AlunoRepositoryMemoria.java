@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class AlunoRepositoryMemoria implements AlunoRepository {
@@ -44,6 +45,16 @@ public class AlunoRepositoryMemoria implements AlunoRepository {
     }
 
     @Override
+    public Optional<AlunoModel> buscarPorCpf(String cpf) {
+        return null;
+    }
+
+    @Override
+    public List<AlunoModel> listarTodos() {
+        return List.of();
+    }
+
+    @Override
     public void atualizar(AlunoModel aluno) {
         for (int i = 0; i < alunos.size(); i++) {
             if (alunos.get(i).getId().equals(aluno.getId())) {
@@ -51,6 +62,11 @@ public class AlunoRepositoryMemoria implements AlunoRepository {
                 return;
             }
         }
+    }
+
+    @Override
+    public boolean deletarPorId(Long id) {
+        return false;
     }
 
     @Override

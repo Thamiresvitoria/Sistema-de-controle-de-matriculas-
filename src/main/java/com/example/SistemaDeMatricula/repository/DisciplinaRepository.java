@@ -12,6 +12,8 @@ public interface DisciplinaRepository {
 
     DisciplinaModel buscarPorId(Long id);
 
+    DisciplinaModel buscarPorCodigo(String codigo);
+
     void atualizar(DisciplinaModel disciplina);
 
     void excluir(Long id);

@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Repository
 public class AlunoRepositoryMemoria implements AlunoRepository {
@@ -14,9 +13,10 @@ public class AlunoRepositoryMemoria implements AlunoRepository {
     private Long proximoId = 1L;
 
     @Override
-    public void salvar(AlunoModel aluno) {
+    public AlunoModel salvar(AlunoModel aluno) {
         aluno.setId(proximoId++);
         alunos.add(aluno);
+        return aluno;
     }
 
     @Override
@@ -35,6 +35,16 @@ public class AlunoRepositoryMemoria implements AlunoRepository {
     }
 
     @Override
+    public AlunoModel buscarPorCpf(String cpf) {
+        for (AlunoModel aluno : alunos) {
+            if (aluno.getCpf() != null && aluno.getCpf().equals(cpf)) {
+                return aluno;
+            }
+        }
+        return null;
+    }
+
+    @Override
     public AlunoModel buscarPorEmail(String email) {
         for (AlunoModel aluno : alunos) {
             if (aluno.getEmail() != null && aluno.getEmail().equalsIgnoreCase(email)) {
@@ -45,16 +55,6 @@ public class AlunoRepositoryMemoria implements AlunoRepository {
     }
 
     @Override
-    public Optional<AlunoModel> buscarPorCpf(String cpf) {
-        return null;
-    }
-
-    @Override
-    public List<AlunoModel> listarTodos() {
-        return List.of();
-    }
-
-    @Override
     public void atualizar(AlunoModel aluno) {
         for (int i = 0; i < alunos.size(); i++) {
             if (alunos.get(i).getId().equals(aluno.getId())) {
@@ -62,11 +62,6 @@ public class AlunoRepositoryMemoria implements AlunoRepository {
                 return;
             }
         }
-    }
-
-    @Override
-    public boolean deletarPorId(Long id) {
-        return false;
     }
 
     @Override

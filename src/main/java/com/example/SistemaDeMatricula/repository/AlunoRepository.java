@@ -10,9 +10,9 @@ public interface AlunoRepository {
 
     Optional<AlunoModel> buscarPorCpf(String cpf);
 
-    List<AlunoModel> listarTodos();
+    AlunoModel buscarPorEmail(String email);
 
     void atualizar(AlunoModel aluno);
 
-    boolean deletarPorId(Long id);
+    void excluir(Long id);
 }

@@ -365,7 +365,6 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 | **Thamires Vitória Muniz da Silva**     |       Services e testes   |
 | **Vitória Gabriele Paulino Vieira**     |     Criação dos Models    |
 
-As contribuições devem ser coerentes com o histórico de commits de cada integrante.
 
 
 

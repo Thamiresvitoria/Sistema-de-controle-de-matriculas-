@@ -80,6 +80,6 @@ public class AlunoModel {
                 "Nome.:"  + nome + "\n" +
                 "Email:"  + email + "\n" +
                 "Cpf..:"  + cpf + "\n" +
-                "Status:" + status + "\n";
+                "Status:" + (status ? "Ativo" : "Desativado");
     }
 }

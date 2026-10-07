@@ -60,12 +60,11 @@ public class DisciplinaModel {
 
     @Override
     public String toString() {
-        return "DisciplinaModel{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", codigo='" + codigo + '\'' +
-                ", cargaHoraria=" + cargaHoraria +
-                ", status=" + status +
-                '}';
+        return "DisciplinaModel:\n" +
+                "id...........:" + id + "\n" +
+                "nome.........:" + nome + "\n" +
+                "codigo.......:" + codigo + "\n" +
+                "carga Horaria:" + cargaHoraria +
+                "status.......:" + (status ? "Ativo" : "Desativado");
     }
 }

@@ -61,7 +61,7 @@ public class TurmaModel {
                 "Codigo.....:" + codigo + "\n" +
                 "Nome.......:" + nome + "\n" +
                 "Turno......:" + turno + "\n" +
-                "Cancelada..:" + status + "\n" +
+                "Status.....:" + (status ? "Ativo" : "Desativado") + "\n" +
                 "Horario....:" + horario + "\n" +
                 "Limite.....:" + limiteAlunos + "\n" +
                 "Disciplinas:" + (disciplinas == null ? 0 : disciplinas.size());

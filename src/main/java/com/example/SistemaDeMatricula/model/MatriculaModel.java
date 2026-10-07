@@ -79,7 +79,7 @@ public class MatriculaModel {
                 "Aluno........:" + aluno + "\n" +
                 "Turma........:" + turma + "\n" +
                 "Disciplina...:" + disciplina + "\n" +
-                "Status.......:"   + status + "\n" +
+                "Status.......:"   + (status ? "Ativo" : "Desativado") + "\n" +
                 "Data matricula:" + dataMatricula
                 ;
     }

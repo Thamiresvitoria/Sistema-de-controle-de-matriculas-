@@ -354,7 +354,7 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 
 # Uso da IA
 
-Alessandro Caetano Macena:
+1. Alessandro Caetano Macena:
 
 Claude Sonnet 5.5.
 Quero uma ajuda com aquele trabalho que te mandei.

@@ -5,6 +5,16 @@
 ### Nome do Projeto
 Sistema de Matrículas em Turmas
 
+### Nome dos Participantes do Projeto
+
+Alessandro Caetano Macena
+Antônio Henrique de Almeida Ramos 
+Jesiane Vitoria Carneiro de Almeida
+Vitória Gabriele Paulino Vieria 
+Thamires Vitória Muniz da Silva
+Davyd Endhell de Lima Alves 
+Samuel Ribeiro da Silva
+
 
 ### Turma
 Análise e Desenvolvimento de Sistemas - Turma E02 - MANHÃ

@@ -360,7 +360,7 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 | **Alessandro Caetano Macena**           |         Repository        |
 | **Antônio Henrique de Almeida Ramos**   |         Documentação      |
 | **Davyd Endhell de Lima Alves**         |         Documentação      |
-| **Jesiane Vitoria Carneiro de Almeida** |      Criação dos Models   |
+| **Jesiane Vitoria Carneiro de Almeida** |      Models e service     |
 | **Samuel Ribeiro da Silva**             |   Criação dos Controllers |
 | **Thamires Vitória Muniz da Silva**     |       Services e testes   |
 | **Vitória Gabriele Paulino Vieira**     |     Criação dos Models    |

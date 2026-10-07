@@ -358,7 +358,7 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 | Integrante                              | Contribuições             |
 | -----------------------------------     | ------------------------- |
 | **Alessandro Caetano Macena**           |         Repository        |
-| **Antônio Henrique de Almeida Ramos**   |         Documentação      |
+| **Antonio Henrique de Almeida Ramos**   |         Documentação      |
 | **Davyd Endhell de Lima Alves**         |         Documentação      |
 | **Jesiane Vitoria Carneiro de Almeida** |      Models e service     |
 | **Samuel Ribeiro da Silva**             |   Criação dos Controllers |

@@ -406,7 +406,7 @@ A Inteligência Artificial foi utilizada como **ferramenta de apoio**, e não co
 | Integrante                              | Contribuições             |
 | -----------------------------------     | ------------------------- |
 | **Alessandro Caetano Macena**           |         Repository        |
-| **Antonio Henrique de Almeida Ramos**   |         Documentação      |
+| **Antônio Henrique de Almeida Ramos**   |         Documentação      |
 | **Davyd Endhell de Lima Alves**         |         Documentação      |
 | **Jesiane Vitoria Carneiro de Almeida** |      Models e service     |
 | **Samuel Ribeiro da Silva**             |   Criação dos Controllers |

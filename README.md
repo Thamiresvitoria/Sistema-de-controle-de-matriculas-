@@ -352,6 +352,30 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 10. Organização do repositório no GitHub.
 
 
+#Uso da IA
+
+Alessandro Caetano Macena:
+
+Claude Sonnet 5.5.
+Quero uma ajuda com aquele trabalho que te mandei.
+
+Eu já avancei bastante no projeto e queria que você desse uma olhada principalmente em alguns métodos do Repository que fiz. A ideia não é refazer o código inteiro, mas revisar o que já está funcionando e ver se tem alguma coisa que dá pra melhorar, corrigir ou deixar mais organizada.
+
+Dá uma atenção principalmente nos métodos de listar, buscar por ID, alterar e excluir. Se tiver alguma coisa que eu fiz de uma forma que poderia ser melhor, me mostra como você faria e explica o motivo da mudança.
+
+Tenta manter o padrão e a estrutura que já estão no trabalho, sem sair mudando outras partes que não precisam. Quero mais uma revisão e melhoria do código do que uma implementação do zero.
+
+2. Thamires Vitória Muniz da Silva:
+
+Chatgpt 
+Versão: GPT-5.6 Luna, da OpenAI. 
+Finalidade: esse prompt foi gerado com a finalidade de dar mais ideias para fazer regras de negócio e posteriormente como utilizar algumas dessas regras de negócio seguindo a estrutura que ele passou como base.
+Prompt :  Me de ideias para regra de negócio de um sistema de matrícula de uma escola que tem as entidades matrícula, alunos, disciplinas e turma. Faça o caso de uso para posteriormente usar em também testes
+Como foi utilizado: seguindo o padrão que foi gerado conseguimos usar como base para fazer os testes e ter mais ideias para fazer as regras de negócio, alguns a gente decidiu por usar, porém outras optamos por modificar.
+
+
+
+
 
 ##  Participação dos Integrantes
 

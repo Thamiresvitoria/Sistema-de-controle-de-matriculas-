@@ -8,37 +8,78 @@ import java.util.List;
 
 @Service
 public class AlunoService {
+
     private final AlunoRepository repository;
 
-    public AlunoService(AlunoRepository repository){
+    public AlunoService(AlunoRepository repository) {
         this.repository = repository;
     }
 
-    public void cadastrar(AlunoModel aluno){
-        repository.salvar(aluno);
+    public void salvar (AlunoModel aluno) {
 
-        if (aluno.getNome() == null){
+        if (aluno == null) {
+            throw new IllegalArgumentException("Aluno não pode ser inexistente");
+        }
+
+        if (aluno.getNome() == null || aluno.getNome().trim().isEmpty()) {
             throw new IllegalArgumentException("Nome é obrigatório");
-        } else if(aluno.getEmail() == null){
+        }
+
+        if (aluno.getEmail() == null || aluno.getEmail().trim().isEmpty()) {
             throw new IllegalArgumentException("Email é obrigatório");
+        }
+
+        if (repository.existePorEmail(aluno.getEmail())) {
+            throw new IllegalArgumentException("Email já cadastrado");
+        }
+
+        if (repository.existePorCpf(aluno.getCpf())) {
+            throw new IllegalArgumentException("CPF já cadastrado");
         }
 
         repository.salvar(aluno);
     }
 
-    public List<AlunoModel> listar(){
+    public List<AlunoModel> listar() {
         return repository.listar();
     }
 
-    public AlunoModel buscarPorId(Long id){
-        return repository.buscarPorId(id);
+    public AlunoModel buscarPorId(Long id) {
+
+        AlunoModel aluno = repository.buscarPorId(id);
+
+        if (aluno == null) {
+            throw new IllegalArgumentException("Aluno não encontrado");
+        }
+
+        return aluno;
     }
 
-    public void atualizar(AlunoModel aluno){
+    public void atualizar(AlunoModel aluno) {
+
+        if (aluno == null) {
+            throw new IllegalArgumentException("Aluno não pode ser inexistente");
+        }
+
+        if (aluno.getNome() == null || aluno.getNome().trim().isEmpty()) {
+            throw new IllegalArgumentException("Nome é obrigatório");
+        }
+
+        if (aluno.getEmail() == null || aluno.getEmail().trim().isEmpty()) {
+            throw new IllegalArgumentException("Email é obrigatório");
+        }
+
         repository.atualizar(aluno);
     }
 
-    public void excluir(Long id){
+    public void excluir(Long id) {
+
+        AlunoModel aluno = repository.buscarPorId(id);
+
+        if (aluno == null) {
+            throw new IllegalArgumentException("Aluno não encontrado");
+        }
+
         repository.excluir(id);
     }
 }

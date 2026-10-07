@@ -2,8 +2,24 @@
 
 ## 1. Identificação
 
-### Nome do Projeto
+### 📃Nome do Projeto
 Sistema de Matrículas em Turmas
+
+### Nome dos Participantes do Projeto
+
+Alessandro Caetano Macena
+
+Antônio Henrique de Almeida Ramos
+ 
+Jesiane Vitoria Carneiro de Almeida
+
+Vitória Gabriele Paulino Vieira
+ 
+Thamires Vitória Muniz da Silva
+
+Davyd Endhell de Lima Alves
+ 
+Samuel Ribeiro da Silva
 
 
 ### Turma
@@ -89,7 +105,7 @@ Principais entidades:
 
 Os Models possuem os atributos e comportamentos relacionados aos objetos do domínio.
 
----
+
 
 ## Controller
 
@@ -104,7 +120,7 @@ Principais Controllers:
 * `MatriculaController`
 * `DisciplinaController`
 
----
+
 
 ## Service
 
@@ -119,7 +135,7 @@ Principais Services:
 * `MatriculaService`
 * `DisciplinaService`
 
----
+
 
 ## Repository
 
@@ -134,7 +150,7 @@ Principais Repositories:
 * `MatriculaRepository`
 * `DisciplinaRepository`
 
----
+
 
 # Injeção de Dependências
 
@@ -158,7 +174,7 @@ public class AlunoService {
 
 Essa abordagem permite que o Spring seja responsável pelo gerenciamento das dependências da aplicação.
 
----
+
 
 # 6. Estrutura do projeto
 
@@ -207,13 +223,13 @@ pom.xml
 README.md
 ```
 
----
+
 
 # 7. Tecnologias
 
 - Java 21 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 - Maven ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
-- Spring Boot ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboote)
+- Spring Boot ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 - JUnit ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 - Git ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 - GitHub ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
@@ -245,7 +261,7 @@ Caso o projeto utilize a execução pela IDE, também é possível executar a cl
 Main.java
 ```
 
----
+
 
 # 🧪 Como executar os testes
 
@@ -257,7 +273,7 @@ mvn test
 
 Os testes verificam comportamentos válidos, regras de negócio e situações inválidas da aplicação.
 
----
+
 
 # 9. Testes automatizados
 
@@ -274,16 +290,16 @@ Os testes contemplam:
 ### Exemplos de cenários testados
 
 ```text
-✓ Deve cadastrar um aluno
-✓ Deve cadastrar uma turma
-✓ Deve realizar uma matrícula válida
-✓ Não deve matricular aluno inexistente
+✓ Deve cadastrar e salvar um matricula
+✓ Deve cadastrar e salvar um aluno
+✓ Não deve permitir que uma disciplina tenha uma carga horária negativa
+✓ Deve salvar as cinco discplina
 ✓ Não deve permitir matrícula duplicada
 ```
 
 A avaliação exige pelo menos **5 testes automatizados relevantes**, incluindo um comportamento válido, duas regras de negócio, uma situação inválida/exceção e um teste adicional.
 
----
+
 
 # 🌿 Git e GitHub
 
@@ -318,7 +334,7 @@ docs: atualiza README
 
 O histórico do Git/GitHub faz parte da avaliação e deve demonstrar a participação dos integrantes no desenvolvimento.
 
----
+
 
 # Histórico do desenvolvimento
 
@@ -335,23 +351,46 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 9. Documentação do projeto;
 10. Organização do repositório no GitHub.
 
----
+
+# Uso da IA
+
+1. Alessandro Caetano Macena:
+
+Claude Sonnet 5.5.
+Quero uma ajuda com aquele trabalho que te mandei.
+
+Eu já avancei bastante no projeto e queria que você desse uma olhada principalmente em alguns métodos do Repository que fiz. A ideia não é refazer o código inteiro, mas revisar o que já está funcionando e ver se tem alguma coisa que dá pra melhorar, corrigir ou deixar mais organizada.
+
+Dá uma atenção principalmente nos métodos de listar, buscar por ID, alterar e excluir. Se tiver alguma coisa que eu fiz de uma forma que poderia ser melhor, me mostra como você faria e explica o motivo da mudança.
+
+Tenta manter o padrão e a estrutura que já estão no trabalho, sem sair mudando outras partes que não precisam. Quero mais uma revisão e melhoria do código do que uma implementação do zero.
+
+2. Thamires Vitória Muniz da Silva:
+
+Chatgpt 
+Versão: GPT-5.6 Luna, da OpenAI. 
+Finalidade: esse prompt foi gerado com a finalidade de dar mais ideias para fazer regras de negócio e posteriormente como utilizar algumas dessas regras de negócio seguindo a estrutura que ele passou como base.
+Prompt :  Me de ideias para regra de negócio de um sistema de matrícula de uma escola que tem as entidades matrícula, alunos, disciplinas e turma. Faça o caso de uso para posteriormente usar em também testes
+Como foi utilizado: seguindo o padrão que foi gerado conseguimos usar como base para fazer os testes e ter mais ideias para fazer as regras de negócio, alguns a gente decidiu por usar, porém outras optamos por modificar.
+
+
+
+
 
 ##  Participação dos Integrantes
 
 | Integrante                              | Contribuições             |
 | -----------------------------------     | ------------------------- |
 | **Alessandro Caetano Macena**           |         Repository        |
-| **Antônio Henrique de Almeida Ramos**   |         Documentação      |
+| **Antonio Henrique de Almeida Ramos**   |         Documentação      |
 | **Davyd Endhell de Lima Alves**         |         Documentação      |
-| **Jesiane Vitoria Carneiro de Almeida** |      Criação dos Models   |
+| **Jesiane Vitoria Carneiro de Almeida** |      Models e service     |
 | **Samuel Ribeiro da Silva**             |   Criação dos Controllers |
 | **Thamires Vitória Muniz da Silva**     |       Services e testes   |
 | **Vitória Gabriele Paulino Vieira**     |     Criação dos Models    |
 
-As contribuições devem ser coerentes com o histórico de commits de cada integrante.
 
----
+
 
 
 
@@ -390,7 +429,7 @@ Durante a apresentação serão demonstrados:
 
 Essa estrutura segue a sugestão de apresentação indicada no projeto de avaliação.
 
----
+
 
 #  Observações
 
@@ -413,7 +452,7 @@ O projeto não utiliza banco de dados, APIs externas, autenticação, Docker ou 
 
 ---
 
-## 👩‍💻 Desenvolvido para fins acadêmicos
+## 👩‍💻 Desenvolvido para fins acadêmicos na Universidade Tiradentes em Recife-PE
 
 **Projeto de Avaliação — Unidade 1**
 **Java + Maven + Spring Boot + JUnit**

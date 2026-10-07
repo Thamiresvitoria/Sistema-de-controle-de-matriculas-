@@ -31,7 +31,7 @@ public class DisciplinaService {
             throw new IllegalArgumentException("A carga horária não pode ser negativo");
         }
 
-        if(disciplina.getCargaHoraria() > 1.050){
+        if(disciplina.getCargaHoraria() > 1050){
             throw new IllegalArgumentException("A carga horária não pode ultrapassar 1050!");
         }
     }

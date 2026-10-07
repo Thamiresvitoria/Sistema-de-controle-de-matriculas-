@@ -290,10 +290,10 @@ Os testes contemplam:
 ### Exemplos de cenários testados
 
 ```text
-✓ Deve cadastrar um aluno
-✓ Deve cadastrar uma turma
-✓ Deve realizar uma matrícula válida
-✓ Não deve matricular aluno inexistente
+✓ Deve cadastrar e salvar um matricula
+✓ Deve cadastrar e salvar um aluno
+✓ Não deve permitir que uma disciplina tenha uma carga horária negativa
+✓ Deve salvar as cinco discplina
 ✓ Não deve permitir matrícula duplicada
 ```
 

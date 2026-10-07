@@ -352,7 +352,7 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 10. Organização do repositório no GitHub.
 
 
-#Uso da IA
+# Uso da IA
 
 Alessandro Caetano Macena:
 

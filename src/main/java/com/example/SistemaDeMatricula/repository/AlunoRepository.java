@@ -16,6 +16,10 @@ public interface AlunoRepository {
 
     AlunoModel buscarPorEmail(String email);
 
+    boolean existePorCpf(String cpf);
+
+    boolean existePorEmail(String email);
+
     void atualizar(AlunoModel aluno);
 
     void excluir(Long id);

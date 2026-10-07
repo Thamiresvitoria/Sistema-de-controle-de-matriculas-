@@ -55,6 +55,16 @@ public class AlunoRepositoryMemoria implements AlunoRepository {
     }
 
     @Override
+    public boolean existePorCpf(String cpf) {
+        return buscarPorCpf(cpf) != null;
+    }
+
+    @Override
+    public boolean existePorEmail(String email) {
+        return buscarPorEmail(email) != null;
+    }
+
+    @Override
     public void atualizar(AlunoModel aluno) {
         for (int i = 0; i < alunos.size(); i++) {
             if (alunos.get(i).getId().equals(aluno.getId())) {

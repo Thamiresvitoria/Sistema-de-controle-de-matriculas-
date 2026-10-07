@@ -105,7 +105,7 @@ Principais entidades:
 
 Os Models possuem os atributos e comportamentos relacionados aos objetos do domínio.
 
----
+
 
 ## Controller
 
@@ -120,7 +120,7 @@ Principais Controllers:
 * `MatriculaController`
 * `DisciplinaController`
 
----
+
 
 ## Service
 
@@ -135,7 +135,7 @@ Principais Services:
 * `MatriculaService`
 * `DisciplinaService`
 
----
+
 
 ## Repository
 
@@ -150,7 +150,7 @@ Principais Repositories:
 * `MatriculaRepository`
 * `DisciplinaRepository`
 
----
+
 
 # Injeção de Dependências
 
@@ -174,7 +174,7 @@ public class AlunoService {
 
 Essa abordagem permite que o Spring seja responsável pelo gerenciamento das dependências da aplicação.
 
----
+
 
 # 6. Estrutura do projeto
 
@@ -223,7 +223,7 @@ pom.xml
 README.md
 ```
 
----
+
 
 # 7. Tecnologias
 
@@ -261,7 +261,7 @@ Caso o projeto utilize a execução pela IDE, também é possível executar a cl
 Main.java
 ```
 
----
+
 
 # 🧪 Como executar os testes
 
@@ -273,7 +273,7 @@ mvn test
 
 Os testes verificam comportamentos válidos, regras de negócio e situações inválidas da aplicação.
 
----
+
 
 # 9. Testes automatizados
 
@@ -299,7 +299,7 @@ Os testes contemplam:
 
 A avaliação exige pelo menos **5 testes automatizados relevantes**, incluindo um comportamento válido, duas regras de negócio, uma situação inválida/exceção e um teste adicional.
 
----
+
 
 # 🌿 Git e GitHub
 
@@ -334,7 +334,7 @@ docs: atualiza README
 
 O histórico do Git/GitHub faz parte da avaliação e deve demonstrar a participação dos integrantes no desenvolvimento.
 
----
+
 
 # Histórico do desenvolvimento
 
@@ -351,7 +351,7 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 9. Documentação do projeto;
 10. Organização do repositório no GitHub.
 
----
+
 
 ##  Participação dos Integrantes
 
@@ -367,7 +367,7 @@ O projeto foi desenvolvido seguindo uma evolução por etapas:
 
 As contribuições devem ser coerentes com o histórico de commits de cada integrante.
 
----
+
 
 
 
@@ -406,7 +406,7 @@ Durante a apresentação serão demonstrados:
 
 Essa estrutura segue a sugestão de apresentação indicada no projeto de avaliação.
 
----
+
 
 #  Observações
 
@@ -429,7 +429,7 @@ O projeto não utiliza banco de dados, APIs externas, autenticação, Docker ou 
 
 ---
 
-## 👩‍💻 Desenvolvido para fins acadêmicos
+## 👩‍💻 Desenvolvido para fins acadêmicos na Universidade Tiradentes em Recife-PE
 
 **Projeto de Avaliação — Unidade 1**
 **Java + Maven + Spring Boot + JUnit**

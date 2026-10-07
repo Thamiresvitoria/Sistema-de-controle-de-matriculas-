@@ -13,7 +13,7 @@ Antônio Henrique de Almeida Ramos
  
 Jesiane Vitoria Carneiro de Almeida
 
-Vitória Gabriele Paulino Vieria
+Vitória Gabriele Paulino Vieira
  
 Thamires Vitória Muniz da Silva
 

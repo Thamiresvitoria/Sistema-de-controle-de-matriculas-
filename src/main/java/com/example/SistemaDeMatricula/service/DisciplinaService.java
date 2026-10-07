@@ -73,7 +73,7 @@ public class DisciplinaService {
         return existe;
     }
 
-    void atualizar(DisciplinaModel disciplina){
+    public void atualizar(DisciplinaModel disciplina){
 
         validar(disciplina);
 

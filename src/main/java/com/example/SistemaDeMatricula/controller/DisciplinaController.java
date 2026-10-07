@@ -16,7 +16,7 @@ public class DisciplinaController {
     }
 
     public void cadastrar(DisciplinaModel disciplina) {
-        service.cadastrar(disciplina);
+        service.salvar(disciplina);
     }
 
     public List<DisciplinaModel> listar() {

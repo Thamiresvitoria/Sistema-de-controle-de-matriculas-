@@ -15,8 +15,8 @@ public class AlunoController {
         this.service = service;
     }
 
-    public void cadastrar(AlunoModel aluno) {
-        service.cadastrar(aluno);
+    public void salvar(AlunoModel aluno) {
+        service.salvar(aluno);
     }
 
     public List<AlunoModel> listar() {

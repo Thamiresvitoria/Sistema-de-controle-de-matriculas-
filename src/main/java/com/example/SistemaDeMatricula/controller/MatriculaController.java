@@ -15,8 +15,8 @@ public class MatriculaController {
         this.service = service;
     }
 
-    public void cadastrar(MatriculaModel matricula) {
-        service.cadastrar(matricula);
+    public void salvar(MatriculaModel matricula) {
+        service.salvar(matricula);
     }
 
     public List<MatriculaModel> listar() {

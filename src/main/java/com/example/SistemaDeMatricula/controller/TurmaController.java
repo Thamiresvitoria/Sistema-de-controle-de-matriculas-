@@ -15,8 +15,8 @@ public class TurmaController {
         this.service = service;
     }
 
-    public void cadastrar(TurmaModel turma) {
-        service.cadastrar(turma);
+    public void salvar(TurmaModel turma) {
+        service.salvar(turma);
     }
 
     public List<TurmaModel> listar() {

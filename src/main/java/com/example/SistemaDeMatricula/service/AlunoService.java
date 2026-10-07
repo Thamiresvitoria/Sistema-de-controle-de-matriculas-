@@ -14,7 +14,7 @@ public class AlunoService {
         this.repository = repository;
     }
 
-    public void cadastrar(AlunoModel aluno){
+    public void salvar(AlunoModel aluno){
         repository.salvar(aluno);
 
         if (aluno.getNome() == null){

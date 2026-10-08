@@ -137,7 +137,7 @@ Principais Services:
 
 
 
-## Repository
+## Repositório
 
 Responsável pelo armazenamento e recuperação dos dados.
 
